@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Force: Análisis de Quejas (03/11/2025)</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de color y fuente Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e40af', // Blue 700
+                        'secondary-gray': '#f3f4f6', // Gray 100
+                        'status-pending': '#f59e0b', // Amber 500
+                        'status-complete': '#10b981', // Emerald 500
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos generales para asegurar la fuente Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Slate 50 */
+        }
+        /* Estilo para que la tabla sea responsiva en dispositivos pequeños */
+        .responsive-table {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="max-w-7xl mx-auto bg-white shadow-2xl rounded-xl p-6 md:p-10">
+
+        <!-- Encabezado de la Minuta/Dashboard -->
+        <header class="mb-8 border-b pb-4">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-1">
+                Task Force: Análisis de Quejas
+            </h1>
+            <p class="text-xl text-primary-blue font-semibold">
+                Plan de Trabajo y Acuerdos de Seguimiento
+            </p>
+            <div class="mt-3 text-sm text-gray-600 flex flex-wrap items-center">
+                <span class="mr-4 font-medium">Fecha de Reunión: <span class="text-gray-900 font-bold">03 de Noviembre de 2025</span></span>
+                <span class="font-medium">Responsables: Subdirección de Servicios y Subdirección Comercial</span>
+            </div>
+        </header>
+
+        <!-- Sección I: Acciones En Curso -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-l-4 border-primary-blue pl-3">
+                I. Acuerdos y Seguimiento de Acciones (En Curso)
+            </h2>
+
+            <div class="responsive-table">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                    <thead class="bg-primary-blue text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left text-xs font-semibold uppercase tracking-wider">No.</th>
+                            <th class="py-3 px-4 text-left text-xs font-semibold uppercase tracking-wider">Acción</th>
+                            <th class="py-3 px-4 text-left text-xs font-semibold uppercase tracking-wider hidden sm:table-cell">Responsables</th>
+                            <th class="py-3 px-4 text-center text-xs font-semibold uppercase tracking-wider w-24">Estado</th>
+                            <th class="py-3 px-4 text-left text-xs font-semibold uppercase tracking-wider">Acuerdos (03/11/2025)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700 divide-y divide-gray-200">
+                        <!-- Fila 1 -->
+                        <tr class="hover:bg-secondary-gray transition-colors duration-150">
+                            <td class="py-4 px-4 font-bold">1</td>
+                            <td class="py-4 px-4 font-medium">Prueba de CRM: 'Alerta' de posible Gestor en Tiendas.</td>
+                            <td class="py-4 px-4 hidden sm:table-cell">Carlos de la Peña / Kevin Zavala</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-block py-1 px-3 text-xs font-semibold rounded-full bg-yellow-100 text-status-pending">En curso</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <p class="text-sm"><b>Estatus:</b> En espera de respuesta por parte de Charlie debido a ausencia por vacaciones. Se espera nueva respuesta para el lunes: <b>10/11/2025</b>.</p>
+                            </td>
+                        </tr>
+                        <!-- Fila Nueva (Acción 4) -->
+                        <tr class="hover:bg-secondary-gray transition-colors duration-150">
+                            <td class="py-4 px-4 font-bold">4</td>
+                            <td class="py-4 px-4 font-medium">Búsqueda de Curso en Universidad Coppel enfocado en la atención y servicio.</td>
+                            <td class="py-4 px-4 hidden sm:table-cell">Kevin Zavala / Irain Verdugo</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-block py-1 px-3 text-xs font-semibold rounded-full bg-yellow-100 text-status-pending">En curso</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <p class="text-sm"><b>Estatus:</b> Se buscará con el área de Capacitación la integración del Curso para los AP's que incumplan con la atención y servicio.</p>
+                            </td>
+                        </tr>
+                        <!-- Fila 2 (Nueva) -->
+                        <tr class="hover:bg-secondary-gray transition-colors duration-150">
+                            <td class="py-4 px-4 font-bold">5</td>
+                            <td class="py-4 px-4 font-medium">Procedimiento de Atención a trabajadores derivados de Autoridad en Módulo de Servicio.</td>
+                            <td class="py-4 px-4 hidden sm:table-cell">Leslie Sánchez/Gerentes Comerciales</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-block py-1 px-3 text-xs font-semibold rounded-full bg-yellow-100 text-status-pending">En curso</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <p class="text-sm"><b>Estatus:</b> Se brinda visto bueno por parte de Rocío al procedimiento subido a Drive. Se reagenda sesión para revisión entre Subdirección de Servicios y Subdirección Comercial</p>
+                            </td>
+                        </tr>
+                        <!-- Fila 3 (Restaurada) -->
+                        <tr class="hover:bg-secondary-gray transition-colors duration-150">
+                            <td class="py-4 px-4 font-bold">10</td>
+                            <td class="py-4 px-4 font-medium">Reforzamiento sobre la aplicación de la Carta de Derechos.</td>
+                            <td class="py-4 px-4 hidden sm:table-cell">Raúl Dimopulos / Gerardo Ledesma</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-block py-1 px-3 text-xs font-semibold rounded-full bg-yellow-100 text-status-pending">En curso</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <p class="text-sm"><b>Estatus:</b> En espera de la Nueva Carta de Derechos para la publicación de la tarea en SIGO.</p>
+                            </td>
+                        </tr>
+                        <!-- Fila 4 (Restaurada) -->
+                        <tr class="hover:bg-secondary-gray transition-colors duration-150">
+                            <td class="py-4 px-4 font-bold">11</td>
+                            <td class="py-4 px-4 font-medium">Trabajar el PAM a todos los niveles para su entendimiento y ellos permean el protocolo hacia su equipo de trabajo, poniendo el ejemplo.</td>
+                            <td class="py-4 px-4 hidden sm:table-cell">Francisco Torres / Gerentes Comerciales</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-block py-1 px-3 text-xs font-semibold rounded-full bg-yellow-100 text-status-pending">En curso</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <p class="text-sm"><b>Estatus:</b> Se envió el documento con los 10 los puntos importantes del PAM para sus comentarios, adicionalmente quedó pendiente el lugar oficial para colocarlo, (propuesta francisco: pizarrón)</p>
+                            </td>
+                        </tr>
+                        <!-- Fila 5 -->
+                        <tr class="hover:bg-secondary-gray transition-colors duration-150">
+                            <td class="py-4 px-4 font-bold">12</td>
+                            <td class="py-4 px-4 font-medium">Subir los puntos del PAM en las sesiones mensuales, de manera seccionada para un mayor entendimiento, en donde los coordinadores refuercen a su equipo 3 puntos del PAM para reforzarlo.</td>
+                            <td class="py-4 px-4 hidden sm:table-cell">Francisco Torres / Gerentes Comerciales</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-block py-1 px-3 text-xs font-semibold rounded-full bg-yellow-100 text-status-pending">En curso</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <p class="text-sm"><b>Estatus:</b> Se compartirán los puntos a Frank para su instalación en la sesión con los CRA's </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sección II: Acciones Finalizadas -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-l-4 border-status-complete pl-3">
+                II. Acciones Finalizadas (Cierre Confirmado al 03/11/2025)
+            </h2>
+
+            <ul class="space-y-4">
+                <li class="p-4 bg-green-50 rounded-lg flex items-start">
+                    <svg class="w-6 h-6 text-status-complete mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <p class="font-semibold text-gray-900">Comunicarnos con los Coordinadores vía telefónica para acordar el flujo de la cita hacia los clientes.</p>
+                        <p class="text-sm text-gray-600">Se finaliza de manera correcta por la buena coordinación entre los involucrados.</p>
+                    </div>
+                </li>
+                 <li class="p-4 bg-green-50 rounded-lg flex items-start">
+                    <svg class="w-6 h-6 text-status-complete mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <p class="font-semibold text-gray-900">Integración de Folios CONDUSEF a CRM</p>
+                        <p class="text-sm text-gray-600">Se oficializa la integración de todos los folios recibidos por parte de la reclamación hacia la autoridad al CRM desde el <b>27 de Octubre de 2025</b>.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sección III: Próximos Pasos -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-l-4 border-gray-500 pl-3">
+                III. Próximos Pasos (Marcar como completado)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tarjeta 1 -->
+                <div class="task-card p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending transition-colors duration-200">
+                    <label class="flex items-center text-lg font-bold text-gray-900 cursor-pointer mb-2">
+                        <input type="checkbox" class="task-checkbox w-5 h-5 text-primary-blue bg-gray-100 border-gray-300 rounded focus:ring-primary-blue mr-3">
+                        1. Seguimiento Prueba CRM
+                    </label>
+                    <p class="text-sm text-gray-700 pl-8">En espera de respuesta por parte de Charlie (vacaciones). Próximo seguimiento: <b>10/11/2025</b>.</p>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="task-card p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending transition-colors duration-200">
+                    <label class="flex items-center text-lg font-bold text-gray-900 cursor-pointer mb-2">
+                        <input type="checkbox" class="task-checkbox w-5 h-5 text-primary-blue bg-gray-100 border-gray-300 rounded focus:ring-primary-blue mr-3">
+                        2. Publicación Carta de Derechos
+                    </label>
+                    <p class="text-sm text-gray-700 pl-8">En espera de la Nueva Carta de Derechos para la publicación de la tarea en SIGO.</p>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="task-card p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending transition-colors duration-200">
+                    <label class="flex items-center text-lg font-bold text-gray-900 cursor-pointer mb-2">
+                        <input type="checkbox" class="task-checkbox w-5 h-5 text-primary-blue bg-gray-100 border-gray-300 rounded focus:ring-primary-blue mr-3">
+                        3. Reprogramación de Sesión
+                    </label>
+                    <p class="text-sm text-gray-700 pl-8">Leslie Isabel Sanchez Paz moverá la sesión de trabajo para definir el procedimiento de atención a trabajadores, debido a las vacaciones de Carlos de la Peña.</p>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="task-card p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending transition-colors duration-200">
+                    <label class="flex items-center text-lg font-bold text-gray-900 cursor-pointer mb-2">
+                        <input type="checkbox" class="task-checkbox w-5 h-5 text-primary-blue bg-gray-100 border-gray-300 rounded focus:ring-primary-blue mr-3">
+                        4. Foto Ubicación Pizarrón
+                    </label>
+                    <p class="text-sm text-gray-700 pl-8">Maria del Rocio Ramirez Patraca solicitará a un coordinador una foto de la ubicación del pizarrón en el "cuartito de conteo de las cajas de abono" y la compartirá.</p>
+                </div>
+                <!-- Tarjeta 5 -->
+                <div class="task-card p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending transition-colors duration-200">
+                    <label class="flex items-center text-lg font-bold text-gray-900 cursor-pointer mb-2">
+                        <input type="checkbox" class="task-checkbox w-5 h-5 text-primary-blue bg-gray-100 border-gray-300 rounded focus:ring-primary-blue mr-3">
+                        5. Implementación PAM Nacional
+                    </label>
+                    <p class="text-sm text-gray-700 pl-8">Gabriela Maria Guada Sarralde Esnaurrizar se reunirá con Fanny para discutir la implementación de los puntos del PAM en un lugar visible de manera homologada a nivel nacional.</p>
+                </div>
+                <!-- Tarjeta 6 -->
+                <div class="task-card p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending transition-colors duration-200">
+                    <label class="flex items-center text-lg font-bold text-gray-900 cursor-pointer mb-2">
+                        <input type="checkbox" class="task-checkbox w-5 h-5 text-primary-blue bg-gray-100 border-gray-300 rounded focus:ring-primary-blue mr-3">
+                        6. Reforzamiento PAM
+                    </label>
+                    <p class="text-sm text-gray-700 pl-8">Javier Antonio Ocampo Gomez buscará el correo con los puntos importantes del PAM, la presentación, y los reenviará a Francisco Javier Torres De Rueda y Maria del Rocio Ramirez Patraca para el reforzamiento y capacitación de coordinadores y asesores.</p>
+                </div>
+                <!-- Tarjeta 7 -->
+                <div class="task-card p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending transition-colors duration-200">
+                    <label class="flex items-center text-lg font-bold text-gray-900 cursor-pointer mb-2">
+                        <input type="checkbox" class="task-checkbox w-5 h-5 text-primary-blue bg-gray-100 border-gray-300 rounded focus:ring-primary-blue mr-3">
+                        7. Modificar Diálogo - PAM
+                    </label>
+                    <p class="text-sm text-gray-700 pl-8">Javier Antonio Ocampo Gomez modificará el diálogo sobre cómo atender a un adulto mayor para que sea explícito que no deben dejar de atender al cliente actual, sino sondearlo y volver con él.</p>
+                </div>
+                <!-- Tarjeta 8 -->
+                <div class="task-card p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending transition-colors duration-200">
+                    <label class="flex items-center text-lg font-bold text-gray-900 cursor-pointer mb-2">
+                        <input type="checkbox" class="task-checkbox w-5 h-5 text-primary-blue bg-gray-100 border-gray-300 rounded focus:ring-primary-blue mr-3">
+                        8. Acciones y compromisos Gómez Palacio
+                    </label>
+                    <p class="text-sm text-gray-700 pl-8">Francisco Javier Torres De Rueda enviará un correo a la gerente regional de Gómez Palacio para establecer compromisos.</p>
+                </div>
+                <!-- Tarjeta 9 -->
+                <div class="task-card p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending transition-colors duration-200">
+                    <label class="flex items-center text-lg font-bold text-gray-900 cursor-pointer mb-2">
+                        <input type="checkbox" class="task-checkbox w-5 h-5 text-primary-blue bg-gray-100 border-gray-300 rounded focus:ring-primary-blue mr-3">
+                        9. Acciones y Compromisos Mexicali
+                    </label>
+                    <p class="text-sm text-gray-700 pl-8">María del Rocío Ramirez Patraca enviará un correo a la gerente regional de Mexicali para establecer compromisos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pie de página/cierre -->
+        <footer class="mt-10 pt-4 border-t text-center text-sm text-gray-500">
+            <p>Documento generado para el Seguimiento del Plan de Trabajo TaskForce de Quejas - Gerencia de Atención al Público.</p>
+        </footer>
+
+    </div>
+
+    <!-- Script para la interactividad de los checkboxes -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Selecciona todas las tarjetas de tareas
+            const taskCards = document.querySelectorAll('.task-card');
+
+            taskCards.forEach(card => {
+                const checkbox = card.querySelector('.task-checkbox');
+
+                // Asegurarse de que el checkbox exista antes de añadir el listener
+                if (checkbox) {
+                    checkbox.addEventListener('change', () => {
+                        // Alternar las clases de fondo
+                        card.classList.toggle('bg-secondary-gray');
+                        card.classList.toggle('bg-green-50'); // Mismo verde que la sección "Finalizadas"
+
+                        // Alternar las clases de borde superior
+                        card.classList.toggle('border-status-pending');
+                        card.classList.toggle('border-status-complete'); // Mismo verde que la sección "Finalizadas"
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
